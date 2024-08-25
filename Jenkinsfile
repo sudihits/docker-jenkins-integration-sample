@@ -38,7 +38,7 @@ pipeline {
 		}
 
 		
-		}
+		
 
 		stage('Package') {
 			steps {
@@ -46,7 +46,7 @@ pipeline {
 			}
 		}
 
-		stage('Build Docker Image') {
+		 stage('Build Docker Image') {
 			steps {
 				//"docker build -t in28min/currency-exchange-devops:$env.BUILD_TAG"
 				script {
@@ -79,3 +79,4 @@ pipeline {
 			echo 'I run when you fail'
 		}
 	}
+}
