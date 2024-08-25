@@ -50,7 +50,7 @@ pipeline {
 			steps {
 				//"docker build -t in28min/currency-exchange-devops:$env.BUILD_TAG"
 				script {
-					dockerImage = docker.build("sudihits/docker-jenkins-integration-sample:${env.BUILD_TAG}")
+					dockerImage = docker.build("sudihits/docker-jenkins-integration-sample:${env.BUILD_NUMBER}")
 				}
 
 			}
